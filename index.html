@@ -13,37 +13,36 @@
 </head>
 <body>
     <div class="container">
-
-        <div class="row gy-2 gx-3 pt-5 align-items-center ms-5">
-            <div class="col-auto">
-                <div>Nome e cognome</div>
-              <label class="visually-hidden" for="autoSizingInput">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Jane Doe">
-            </div>
-            <div class="col-auto">
-                <div>Km da percorrere</div>
-              <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-              <div class="input-group">
-                <input id="km" type="number" class="form-control" placeholder="10">
-              </div>
-            </div>
-            <div class="col-auto">
-                <div>Fascia d'età</div>
-              <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-              <select class="form-select" id="age">
-                <option selected>Maggiorenne</option>
-                <option value="1">Minorenne</option>
-                <option value="2">Over 65</option>
-              </select>
-            </div>
-            <div class="col-12 pt-5 offset-2">
-              <button id="button" class="btn btn-secondary">Genera</button>
-              <button id="button" class="btn btn-secondary">Annulla</button>
-            </div>
+      <div class="row gy-2 gx-3 pt-5 align-items-center ms-5">
+        <div class="col-auto">
+            <div>Nome e cognome</div>
+          <label class="visually-hidden" for="autoSizingInput">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Jane Doe">
         </div>
+        <div class="col-auto">
+            <div>Km da percorrere</div>
+          <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+          <div class="input-group">
+            <input id="km" type="number" class="form-control" placeholder="10">
+          </div>
+        </div>
+        <div class="col-auto">
+            <div>Fascia d'età</div>
+          <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+          <select class="form-select" id="age">
+            <option value="1">Maggiorenne</option>
+            <option value="2">Minorenne</option>
+            <option value="3">Over 65</option>
+          </select>
+        </div>
+        <div class="col-12 pt-5 offset-3">
+          <button id="button" class="btn btn-secondary">Genera</button>
+          <button id="button" class="btn btn-secondary ms-2">Annulla</button>
+        </div>
+      </div>
     </div>
-    <p class="h1 text-center pt-3" id="ticket-price"><p>
-    <p class="text-center pt-3" id="discount"></p>
+    <p class="h1 text-center pt-5" id="ticket-price"><p>
+    <p class="text-center pt-5" id="discount"></p>
     <script src="js/script.js"></script>
 </body>
 </html>
