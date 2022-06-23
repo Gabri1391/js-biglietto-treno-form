@@ -3,7 +3,7 @@ discountMessage = 'Ti è stato applicato uno sconto del '
 
 const ticketParagraph = document.getElementById('ticket-price');
 const buttonIcon = document.getElementById('button');
-
+const deleteIcon = document.getElementById('delete');
 
 buttonIcon.addEventListener('click', function() {
     const nameEl = document.getElementById('name').value;
@@ -29,10 +29,15 @@ buttonIcon.addEventListener('click', function() {
 
      ticketParagraph.innerText = message + price.toFixed(2);
      document.getElementById('discount').innerText = '';
-     
+
      if (hasDiscount){
          document.getElementById('discount').innerText = '';
          document.getElementById('discount').innerText = discountMessage;
          discountMessage = 'Ti è stato applicato uno sconto del '
      }  
+});
+
+deleteIcon.addEventListener('click',function(){
+  ticketParagraph.innerText = '';
+  document.getElementById('discount').innerText = '';
 });
